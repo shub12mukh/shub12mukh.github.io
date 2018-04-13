@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Testing Carousel</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).load(function(){
+			$("#cityListModal").modal('show');
+		});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+		<!--Modal -->
+		<div id="cityListModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!--Modal Content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+						<h2 style="text-align:center;"><span class="glyphicon glyphicon-lock"></span>Select Your City</h2>
+					</div>
+					
+					<div class="modal-body">
+							<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="city-list">
+								<h1 style="text-align:center;padding-top:10px;">Places Where we provide our Service</h1>
+								<div class="city-list">
+									<img class="citylistImage" src="bangalore.png"></img>
+									<div class="desc"><strong>Bangalore</strong><br>Currently out of service<br/></div>
+								</div>
+								<div class="city-list">
+									<img class="citylistImage" src="delhi.png"></img>
+									<div class="desc"><strong>Delhi NCR</strong><br>Currently out of service<br/></div>
+								</div>
+								<div class="city-list">
+									<img class="citylistImage" src="kolkata.png"></img>
+									<div class="desc">Kolkata</div>
+								</div>
+								<div class="city-list">
+									<img class="citylistImage" src="hyderabad.png"></img>
+									<div class="desc"><strong>Hyderabad</strong><br>Currently out of service<br/></div>
+								</div>
+								<div class="city-list">
+									<img class="citylistImage" src="lucknow.png"></img>
+									<div class="desc"><strong>Lucknow</strong><br>Currently out of service<br/></div>
+								</div>
+							</div>
+					</div>
+					
+					
+					<div class="modal-footer">
+						<button class="btn btn-danger pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	</body>
+</html>

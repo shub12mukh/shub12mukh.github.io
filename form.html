@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+$name = $email = $remember ="";
+if($_SERVER["REQUEST_METHOD"]== "POST"){
+	$name = validate($_POST["$name"]);
+	$email = validate($_POST["$email"]);
+	$remember = validate($_POST["$remember"]);
+}
+
+function validate($data){
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+?>
+
+
+
+
+<form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> method="POST">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<label>
+      <input type="checkbox"  name="remember" value="foodYes" style="margin-bottom:15px"> Food Available
+	  <input type="checkbox"  name="remember" value="foodNo" style="margin-bottom:15px"> Food Not Available
+</label>
+<input type="submit">
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $remember;
+echo "<br>";
+?>
+
+</body>
+</html>

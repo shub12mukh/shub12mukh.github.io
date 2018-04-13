@@ -1,0 +1,55 @@
+/*var img = document.createElement('IMG');
+		img.setAttribute('src', json.testData[a].image);
+		img.setAttribute('width', '100%');
+		img.setAttribute('height' , '250px')
+		
+		
+		var button = document.createElement("BUTTON");
+		button.setAttribute('class','btn btn-info myClass');
+		alert('ffff');
+		button.setAttribute('owner',json.testData[a].email);
+		var span = document.createTextNode("Contact Details");
+		button.appendChild(span);
+		
+		var inner_div = document.createElement("DIV");
+		inner_div.setAttribute('class','w3-container w3-white');
+		
+		inner_div.innerHTML = "<p>"+"<b>"+json.testData[a].location+"</b>" + "<br>" + "<b>"+json.testData[a].address + "</b>" +"<br>" + "<b>" + "Food Availability: "+json.testData[a].foodAvailability.toUpperCase()+"<br>"+"<br>"+"Details:- "+"</b>"+"<br>"+json.testData[a].details+"</p>"
+								+ "<button class='btn btn-primary center-block img-responsive' ><span>Request Contact</span></button>";
+		
+		var outer_div = document.createElement("DIV");
+		outer_div.setAttribute('class','w3-third w3-container w3-margin-bottom ');
+		outer_div.appendChild(img);
+		outer_div.appendChild(inner_div);
+		
+		document.getElementById("d01").appendChild(outer_div); */
+		
+food filter
+
+		/*document.getElementById("d01").innerHTML = "";
+		var json = <?php echo $myJSON_foodA; ?>;
+		for(a in json.testData){
+			var img = document.createElement('IMG');
+			img.setAttribute('src', json.testData[a].image);
+			img.setAttribute('width', '100%');
+			img.setAttribute('height' , '250px')
+			
+			
+			var button = document.createElement("BUTTON");
+			button.setAttribute('class','btn btn-info');
+			var span = document.createTextNode("Contact Details");
+			button.appendChild(span);
+			
+			var inner_div = document.createElement("DIV");
+			inner_div.setAttribute('class','w3-container w3-white');
+			inner_div.setAttribute('id','inner_div');
+			
+			inner_div.innerHTML = "<p>"+"<b>"+json.testData[a].location+"</b>" + "<br>" + "<b>"+json.testData[a].address + "</b>" +"<br>" + "<b>" + "Food Availability: "+json.testData[a].foodAvailability.toUpperCase()+"<br>"+"<br>"+"Details:- "+"</b>"+"<br>"+json.testData[a].details+"</p>"
+									+ "<button class='btn btn-primary center-block img-responsive' ><span>Request Contact</span></button>";
+			
+			var outer_div = document.createElement("DIV");
+			outer_div.setAttribute('class','w3-third w3-container w3-margin-bottom ');
+			outer_div.appendChild(img);
+			outer_div.appendChild(inner_div);
+			document.getElementById("d01").appendChild(outer_div);
+		}*/

@@ -1,0 +1,13 @@
+postid, Name, Location, Details, Food Availibility, Booked,last_updated
+
+computeddate=date(today-30);
+
+srch query
+select * from tb where booked!= 1 and last_updated >= computerDate and location in (field1,field2)
+
+select postid from tb where booked!= 1 and last_updated >= computerDate
+if(query returns more than zero objects){
+	popup(is this still relevant)
+	 true: update last_updated=today where postid=postid
+	 false:  update booked=1 where postid=postid
+}

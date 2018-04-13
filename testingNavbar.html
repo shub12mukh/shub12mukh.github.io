@@ -1,0 +1,179 @@
+<!doctype>
+<html>
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>Connect To People</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="file.js">
+	</script>
+	
+	<style>
+		.modal-header{
+		height: 100px;
+		background-color: #5cb85c;
+		color:white !important;
+		text-align: center;
+		}
+		.modal-footer{
+			background-color: #f9f9f9;
+		}
+		
+		
+		
+		.container1 .btn {
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			background-color: #f4511e;
+			border-radius: 7px;
+			color: white;
+			font-size: 16px;
+			padding: 12px 24px;
+			border: none;
+			cursor: pointer;
+			text-align: center;
+			}
+
+			.container1 .btn:hover {
+				background-color: black;
+			}
+			.btn span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+			
+			.btn span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.btn:hover span {
+			  padding-right: 25px;
+			}
+
+			.btn:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			footer {
+			  background-color: #555;
+			  color: white;
+			  padding: 15px;
+			}
+			
+			body {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+			</style>
+			<!-- Over riding the 'navbar' style in bootstrap CDN -->
+			<style>
+				  #hello {
+					  overflow: hidden;
+					  background-color: #333;
+					  position: fixed;
+					  top: 0;
+					  width: 100%;
+					}
+			</style>
+	
+  </head>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+	<body>
+		
+		<div class="header">
+		  <h2>Scroll Down</h2>
+		  <p>Scroll down to see the sticky effect.</p>
+		</div>
+	
+		<div id="navbar">
+		  <a class="active" href="javascript:void(0)">Home</a>
+		  <a href="javascript:void(0)">News</a>
+		  <a href="javascript:void(0)">Contact</a>
+		</div>
+
+  
+		<div class="container" style="height:1500px;">
+		  <h3>Collapsible Navbar</h3>
+		  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+		  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+		</div>
+</body
+</html>

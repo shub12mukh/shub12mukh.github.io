@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="file.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#myModalSigninForm").modal('show');
+		});
+	</script>
+</head>
+<body>
+
+<!-- Sign Up Form Modal -->
+	<div class="container">
+		<!--Modal -->
+		<div id="myModalSigninForm" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!--Modal Content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+						<h2 style="text-align:center;"><span class="glyphicon glyphicon-lock"></span>Sign Up</h2>
+					</div>
+					<div class="modal-body">
+					
+					
+						<form id="signupform" role="form"  method="POST" action="mysql_signup.php">
+							<div class="form-group">
+								<label><span class="glyphicon glyphicon-user"></span>First Name: </label>
+								<input type="text" class="form-control" placeholder="Enter Name" required name="fname"></input>
+							</div>
+							<div class="form-group">
+								<label><span class="glyphicon glyphicon-user"></span>Last Name: </label>
+								<input type="text" class="form-control" placeholder="Enter Name" required name="lname"></input>
+							</div>
+							<div class="form-group">
+								<label><span class="glyphicon glyphicon-eye-open"></span>Email: </label>
+								<input id="signupEmail" type="text" class="form-control" placeholder="Enter Email" required name="email" data-toggle="popover" data-content="invalid email"></input>
+								
+							</div>
+							<div class="form-group">
+								<label><span class="glyphicon glyphicon-lock"></span>Password: </label>
+								<input id="#" type="password" class="form-control" placeholder="Enter Password" required name="password"></input>
+							</div>
+							<div class="form-group" required>
+								<label>Gender: </label><br>
+								<div class="col-sm-4">
+									<label class="radio-inline">
+										<input type="radio" name="gender" value="male"><i class="fa fa-male" style="font-size:24px" ></i>Male
+									</label>
+								</div>
+								<div class="col-sm-4">
+									<label class="radio-inline">
+										<input type="radio" name="gender" value="female"><i class="fa fa-female" style="font-size:24px"></i>Female
+									</label>
+								</div>
+							</div><br>
+							<div class="form-group">
+								<label><input type="checkbox" value="" required>Accept The Terms&Conditions </label>
+							</div>
+							<div class="form-group">
+								<button id="signUp" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Sign Up</button>
+							</div>
+						</form>
+						
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
